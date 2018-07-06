@@ -1,0 +1,13 @@
+@for $i from 300px through 750px {
+  @media screen and (width:$i){
+    html{
+      font-size:20*$i/75;
+    }
+  }
+}
+@mixin ell() {
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
